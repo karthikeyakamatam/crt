@@ -1,0 +1,145 @@
+the default data type of decimal is double
+
+
+TYPE CASTING :	manaual
+TYPE CONVERSION: automatic
+
+*method is always attached to object whereas function is independent
+in java there is no function (every function is created inside class not independent)
+
+*main indicates start of the program
+
+*in a project if there are n files then all no need main function for all only one needs main function
+
+*prototype--structure of program
+
+*we should give main because it is called by compiler which is out of package so we use public other than default , private and protected
+
+*STATIC--we give static main so we need not create object for the main method
+
+*we cannot access the static method outside of the class
+ so use classname.methodname
+
+*we use the same name for classname and file name in IDE(integrated development) environment
+
+*  .class files created for each class
+   for example in program 5 classes are there implies it will create 5 .class files
+
+** java is platform independent but JVM is platform  dependent
+*JIT(just in time )compiler is the compiler used by java
+
+
+_________________
+source code
+
+class --javac--->>compiler----->main.class---java--->JVM--->(mac)or(Linux)or(windows)
+
+sample.java
+_________________
+
+
+DATATYPE:
+
+** in C lang float allows 7 decimals and double allows 14 decimals
+**type modifier such as short , long  , signed , unsigned in C lang
+
+
+*in java we have no type modifier instead for intger we have
+  byte-1 byte(256-->>-128 to 127)
+  short-2 bytes(65536-->> -32768 to 32767)
+  int-4 bytes
+  long-8 bytes
+
+*primitive datatypes
+  Boolean, int ,
+
+
+**string is not a primitive datatype
+  String is not a key  word it is built in class
+ (in java built in class start with cap letter)
+
+*we use various notations like snake notation(under score) and camel notation(start with small and every second word is cap)  
+
+
+
+**variable types--1.Instance variable  2.local 3.static  4.final
+1.Instance variable: is a variable created inside the class but outside of any method
+  can be defined any where inside the class(before or after or between thew methods)
+ *the instance variables can be used without assigning a value where it procceds with default value(for int 0, for string null, for Boolean false)
+
+2.local variable: created inside method. 
+  **it is never assigned with default value
+   *it cannot be used without assigning a value
+
+3.static variable:
+
+  ** only instance variables can be static (local cannot be static)
+
+4.final variable : it is used to create constants
+
+  *final variable must be initialized for instance(for local it must be assigned )
+  *both instance and local variable can be made final
+**instance and static does not bind with the object
+
+
+
+afternoon:
+
+TAKING INPUT IN JAVA:
+
+1.import java.util.Scanner
+2.use Scanner varible = new Scanner(System.in);
+
+*using space  or enter implies completed reading one data value in java
+
+
+questions : 
+1. MCQ (programming , dbms ,os , cn) 
+2. sudeo code (MCQ based **bitwiswe operators ,string based concepts , )  
+3. Automata Fix (they give -- problem statement ,test cases , solutions)--hexaware company uses only this
+4. Coding (given ---> problem statement , test cases , driving code)
+5. project based (for certifications like java full stack)
+
+OPERATORS: an operator is a symbol used to perform either mathematical operation or logical operation
+**mathematical operations returns diff output for diff inputs whereas logical operators returns the Boolean values
+
+TYPES OF OPERATORS:
+1.Arithemtic (+ , * , / , - , // , ** )
+
+2.Increment or decrement operator  (++ , --)  **python do not have increment and decrement
+
+3.Assigment operator (= , += , -= ,*= , &= , ^=)
+(mathematical operators)
+
+1.Relattional( < , > , <= , >= , == , !=)
+
+2.Logical (&& , || , !)
+
+3.Bitwise(& , | , ^ , ~ , << , >>)
+
+4.conditional( ? , :)
+(logical operators)
+
+ Q: problem statment-- 
+     given a positive four digit integer 'n' check whether it is happy number or not 
+     (happy number : a number is happy number if product of last tow digits is equal to sum of remaning digits)
+
+
+
+
+
+
+****coding questions
+  1.bit manipulation
+  2.number theory based
+  3.patterns
+  4.arrays
+  5.strings
+
+**how to remove last digit from given number --  use %  
+ *how to extract the last digit from given number -- use /
+ * how to append two numbers -- find digits count of other number and use number*(int)Math.pow(10,digitscount) and add that number
+ * how to find number of digits in a number  -- use log function of base 10  the no.of digits ==log10N +1
+
+
+Q;2:  given a positive intger 'n' your task is swap first digit with last digit
