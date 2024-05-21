@@ -1,0 +1,33 @@
+day_02 forenoon
+
+Types of arcthecture:
+1 tire--only one main 
+2 tire--client and server
+3 tire--server as treated as server side and user side
+
+server independent:--
+
+
+OOPS concept
+1.encapsulation--wraping up of data
+
+
+CONTROL FLOW STATMENTS:
+1.conditional statments -- switch , if ,if -else , if -else ladder
+2.looping statments -- do while ,for
+
+FUNCTIONS:
+1.static:-- called with class
+2.non static:--called with object
+
+
+
+reddythetrainer@gamil.com--email for kondareddy sir
+
+1.write a java program to reverse the array
+2.write a java program to input zeroes and non zeros shift all zeros to last of array and print
+3.write a java program to input elements into the array
+  input an index value to delete the element and print the rest of the array elements.
+4.write a java program to input n elements into an array. input a new value and position 
+  to insert.
+ write a code to insert a new value at the given position index array and print the array 
