@@ -1,0 +1,105 @@
+day 05:
+  Array--
+    an array is collection of elements of same data type stored in continuous memory location
+    and shares a common name
+     syntax : 1. data_type array_name[size];
+              2.data_type[] array_name[size];
+              3. data_type[] array_name=new datatype[size];
+              4.data_type array_name[]= new datatype[size];
+
+**if do not declare the values in array then for int it is 0 ,for string it is null,
+ bool -false
+  but for normal datatypes we can print without declaring the values 
+
+IN PYTHION
+{{
+**in the if(condition)--
+      condition is false if it is zero(0) ,for character is (null), for list is empty list
+      condition is true if it is non-zero(1,4,4.5,-5) for character other than null, 
+                                 for list other than empty list
+**in the if(condtion1,condtion2)--
+      the condition 2 is considered
+**in the if(condition1,codition2,---=,condition n)--
+       the all condition are taken as tuple as tuple is non empty it is true
+}}
+
+IN JAVA
+
+{{
+** in the if(condition)--
+     condition only accepts bool values (true or false)
+}}
+
+
+
+FOR LOOPS
+{{
+
+type 1:-- for(int i=0;i<=n;i++)
+type 2(advanced array):-- for(int value : array_name)
+}}
+
+Arrays
+{{
+    * for using in built java arrays use ( import java.util.Arrays;)
+    * Arrays.setAll(arrayname , value1);  -- sets all the values in array with value1
+    
+  question 1: return square of even and cube of odd number in array
+    {  
+      Arrays.setAll(arrayname, (i)-> arryname[i]%2==0 ? arr[i]*arr[i] :arr[i]*arr[i]*arr[i];
+      }
+  
+
+}}
+
+
+
+Strings:--
+   string is a sequence of characters enclosed in double quotes.
+   syntax:--
+       1.using string literal
+           syntax:( String str_name ="string literal";)
+       2.using string constructor
+           syntax:( String str_name = new String("string value);)
+       {diff between 1 and 2 is when we use string literal it use a memory space called STRING POOL  and 
+          when it 2 it is used memory heap}
+       ** STRING POOL can be used for different references(more than one variable can be reference it)
+           it is possible only when multiple variables are holding the same data
+
+  ** strings are IMMUTABLE
+           it means we cannot modify it but can be changed totaly
+
+
+***OBJECT class the supermost class of all classes
+   the toString function is in OBJECT class
+   * toString() method should always implement as public and returns string always
+
+{{
+   String methods:
+   1. to.LowerCase() -- to the string into lower case(not the original string but assigned to another or reassigned to it but not modified)
+   2. to.UpperCase()
+   3. .charAt()  -- to access characters based on the index
+   4.  .contains() -- checks the membership relation
+   5.  .compareto() -- checks the comparison between each char in string lexicographialy
+          when(it finds a difference it returns the mismatched ASCII value
+          for example{   String msg="Hello"
+                         Sytem.out.println(msg.compareto("Gello")) ----(1)  (since H-G) 
+                         Sytem.out.println(msg.compareto("Hello")) ----(0)
+                         Sytem.out.println(msg.compareto("Iello")) ----(-1)  (since H-I)
+                       }
+  6.  .endsWith()
+  7.  .Indexof()
+                       
+}}
+
+
+
+ASCII values
+
+{{
+  A to Z : 65 to 90
+  a to z: 97 to 122
+  0 to 9 : 48 to 57
+  NULL :0 
+}}
+

@@ -1,0 +1,26 @@
+Bitwise operators:--
+  & and
+  | or
+  ^ xor
+  ~ compliment
+  << 
+  >>
+
+
+Patterns:--
+  1.solid(filled)
+    e.g:  ********
+          ********
+          ********
+          ********
+          ********
+
+
+  2.hollow(outlined)
+    e.g: *******
+         *     *
+         *     *
+         *     *
+         *******
+
+
