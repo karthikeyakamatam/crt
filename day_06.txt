@@ -1,0 +1,116 @@
+OOPS 
+
+
+** c++ and python supports both object oriented and function oriented programming
+** java supports only object oriented programming
+**monolithic programming -- where code is written in single block
+
+OBJECT:-- 
+{{
+  anything in the world can be taken as object
+  * object are associated with some data values associated with 
+  * object will have some behaviour associated with it
+  
+}}
+
+** in object oriented programming Class is base
+  
+** in the class cannot do any executable statements we can only create variables 
+  and methods(in python we can do executable statements in class)
+
+** CONSTRUCTOR --
+ {{ is a special method which has same name as class
+     it will execute when an object is created
+    *it does not have a return type (not even the void)
+    * it is not compulsory to define but when an object is defined it should 
+      execute  constructor(if we not provide compiler will automatically provides constructor)
+    **we can not execute without the constructor
+    ** for class we can have 'n' no.of constructors but all should not have same parameters 
+        (constructor which does not have any arguments is called default constructor
+         constructor which does  have any arguments is called parametrized constructor )
+  }}
+* this -- int ths.obj  is the reference of object been used
+* super-- always refers to parent class
+** static polymorphism -- is implemented using method overloading
+
+* method overloading is called as static polymorphism because at the compilation time it is decided which should be executed
+* method overriding happens only in child class
+** dynamic polymorphism -- is implemented using method overriding
+** In java there is no concept of destructor as it has GARBAGE COLLECOTR
+
+** a normal class can have only concrete methods but abstract class can have both concrete and abstract
+*** we can not create an object for abstract class (it should take the help of child class)
+*concrete class - it allows to create objects
+* interface contains only abstract methods
+
+PILLARS OF OBJECT ORIENTED PROGRAMMING
+{{
+   1.Encapsulation :-- binding data with the code (in general a capsule will have different chemicals)
+                   { main goal--entire control of data is belongs to it its class but another classes can make request t
+                     * get s and set s method to request to change
+                     }
+   2.Abstraction :-- hiding the unwanted data( for example we use MATH.max but we need not bother how to does internally)
+                     {
+                       abstract method :-- a method without any implementation
+                       ** a abstract method is can be created in abstract classes(normal class can not hold abstract methods)
+                          
+                       }
+   }}
+
+
+INTERFACE
+{{
+   in interface we can have only abstract methods (but need not use abstract key word)
+   * it does not allow to create objects
+   * by default every variable in interface is (public ,static and final)
+   * by default every method in interface is  (public and abstract)
+    
+    }}
+
+GENERIC PROGRAMMING:---
+   works only with objects(not suitable for primitive data types)
+
+
+AUTOBOXING:--the boxing deals with converting primitive data type into non primitive type
+              { example Integer b=20;
+                  }
+UNBOXING  :--the boxing deals with converting non primitive data type into primitive type
+              {example int a=10 ; a=b;
+                   }
+
+
+COLLECTION FRAMEWORK
+{{
+     collection --->Interface
+    
+}}
+
+
+java.util
+{{{
+    collection
+       {{
+          1.List
+                {
+                  1.ArrayList
+                  2.LinkedList
+                  3.Stack
+                  
+                   }
+          2.Queue
+               {
+                 1.priority queue
+                 2.dequeue
+                 }
+          3.set
+              {
+                1.Hashset
+                2.Linked hashset
+                }
+           }}
+
+    
+
+}}}
+
+btechsmartclass.com
