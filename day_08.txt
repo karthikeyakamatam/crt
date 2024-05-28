@@ -1,0 +1,245 @@
+day_08
+
+
+SORTING ALGOERITHMS
+{{
+1.selection sort
+{
+  in the insertion sorting the first element is compared two the remaining elements if it greater we swap with that element
+  and increment the j position and check for remaining and after end of list increment i(which means now start from second element in second iteration).
+
+
+example
+((Initial Array: [64, 25, 12, 22, 11]
+Find the minimum from index 0 to 4: 11
+Swap 11 with 64
+Array: [11, 25, 12, 22, 64]
+Next Iteration: [11, 25, 12, 22, 64]
+Find the minimum from index 1 to 4: 12
+Swap 12 with 25
+Array: [11, 12, 25, 22, 64]
+Next Iteration: [11, 12, 25, 22, 64]
+Find the minimum from index 2 to 4: 22
+Swap 22 with 25
+Array: [11, 12, 22, 25, 64]
+Next Iteration: [11, 12, 22, 25, 64]
+Find the minimum from index 3 to 4: 25
+No swap needed
+Array: [11, 12, 22, 25, 64]
+Final Iteration: [11, 12, 22, 25, 64]
+Already sorted))
+
+
+time complexity: O(n**2)
+
+
+
+}
+2.Bubble sort
+{
+
+
+
+Example
+(
+Consider sorting the array [5, 1, 4, 2, 8] in ascending order.
+
+Initial Array: [5, 1, 4, 2, 8]
+
+First Pass:
+
+Compare 5 and 1, swap: [1, 5, 4, 2, 8]
+Compare 5 and 4, swap: [1, 4, 5, 2, 8]
+Compare 5 and 2, swap: [1, 4, 2, 5, 8]
+Compare 5 and 8, no swap: [1, 4, 2, 5, 8]
+Second Pass:
+
+Compare 1 and 4, no swap: [1, 4, 2, 5, 8]
+Compare 4 and 2, swap: [1, 2, 4, 5, 8]
+Compare 4 and 5, no swap: [1, 2, 4, 5, 8]
+Compare 5 and 8, no swap: [1, 2, 4, 5, 8]
+Third Pass:
+
+Compare 1 and 2, no swap: [1, 2, 4, 5, 8]
+Compare 2 and 4, no swap: [1, 2, 4, 5, 8]
+Compare 4 and 5, no swap: [1, 2, 4, 5, 8]
+Array is already sorted.
+)
+
+time complexity: O(n**2)
+
+
+}
+3.Insertion sort
+{
+
+
+
+main code:{
+
+for i from 1 to n-1 do
+    key = arr[i]
+    j = i - 1
+    while j >= 0 and arr[j] > key do
+        arr[j + 1] = arr[j]
+        j = j - 1
+    arr[j + 1] = key
+
+          }
+
+Example
+(Consider sorting the array [12, 11, 13, 5, 6] in ascending order.
+
+Initial Array: [12, 11, 13, 5, 6]
+
+First Iteration (i = 1):
+
+Key = 11
+Compare 11 with 12, move 12 to the right: [12, 12, 13, 5, 6]
+Insert 11 at position 0: [11, 12, 13, 5, 6]
+Second Iteration (i = 2):
+
+Key = 13
+Compare 13 with 12, no move needed
+Array remains: [11, 12, 13, 5, 6]
+Third Iteration (i = 3):
+
+Key = 5
+Compare 5 with 13, move 13 to the right: [11, 12, 13, 13, 6]
+Compare 5 with 12, move 12 to the right: [11, 12, 12, 13, 6]
+Compare 5 with 11, move 11 to the right: [11, 11, 12, 13, 6]
+Insert 5 at position 0: [5, 11, 12, 13, 6]
+Fourth Iteration (i = 4):
+
+Key = 6
+Compare 6 with 13, move 13 to the right: [5, 11, 12, 13, 13]
+Compare 6 with 12, move 12 to the right: [5, 11, 12, 12, 13]
+Compare 6 with 11, move 11 to the right: [5, 11, 11, 12, 13]
+Insert 6 at position 1: [5, 6, 11, 12, 13]
+)
+
+time complexity --O(n**2)
+
+}
+4.Quick sort
+{
+
+
+base logic:--
+(((
+function quickSort(arr, low, high) {
+    if (low < high) {
+        pi = partition(arr, low, high)
+        quickSort(arr, low, pi - 1)
+        quickSort(arr, pi + 1, high)
+    }
+}
+
+function partition(arr, low, high) {
+    pivot = arr[high]
+    i = low - 1
+    for j = low to high - 1 do
+        if arr[j] <= pivot then
+            i = i + 1
+            swap arr[i] and arr[j]
+    swap arr[i + 1] and arr[high]
+    return i + 1
+}
+)))
+
+Example
+Consider sorting the array [10, 7, 8, 9, 1, 5].
+
+Initial Array: [10, 7, 8, 9, 1, 5]
+Choose Pivot: Let's choose 5 as the pivot (last element).
+First Partition:
+
+Rearrange: [1, 7, 8, 9, 10, 5]
+Swap 1 and 5: [1, 5, 8, 9, 10, 7]
+Pivot position: 1
+Left Sub-array: [1] (already sorted)
+Right Sub-array: [8, 9, 10, 7]
+
+Next Recursive Steps:
+
+Choose pivot for [8, 9, 10, 7]: Pivot = 7
+Rearrange: [8, 9, 10, 7]
+Swap 7 and 10: [7, 9, 10, 8]
+Pivot position: 3
+Left Sub-array: [7, 9, 8]
+
+Choose pivot for [7, 9, 8]: Pivot = 8
+Rearrange: [7, 8, 9]
+Pivot position: 2
+Right Sub-array: [9, 10] (already sorted)
+
+
+
+
+
+time complexity(nlog n)
+}
+
+
+
+
+***5.Merge sort
+
+{
+
+base logic:
+(((
+function mergeSort(arr):
+    if length of arr <= 1:
+        return arr
+
+    mid = length of arr // 2
+    left = arr[0:mid]
+    right = arr[mid:length of arr]
+
+    left = mergeSort(left)
+    right = mergeSort(right)
+
+    return merge(left, right)
+
+function merge(left, right):
+    result = []
+    while left and right are not empty:
+        if left[0] <= right[0]:
+            append left[0] to result
+            remove left[0] from left
+        else:
+            append right[0] to result
+            remove right[0] from right
+
+    append remaining elements of left to result
+    append remaining elements of right to result
+
+    return result
+)))
+time complexity(nlog n)
+}
+
+}}
+
+
+
+DRAWBACKS OF ARRAYS
+{
+1.size should know before
+2.the memory is assigned for array in RAM(where as for linked list it is in )
+}
+
+LINKEDLIST
+{{
+
+* a linked list is a sequence of elements of in which every element is linked to its next element in the sequence
+
+**every individual element of a linked list is called as node.
+  A node contains a field for storing the data value and one or more number of reference fields to store reference of other 
+  elements in the linked list
+* the first node of list is called head
+
+
+PROBLEMS:-1.we can traverse only in forward direction
+}}
