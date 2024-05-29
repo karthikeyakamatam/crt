@@ -243,3 +243,14 @@ LINKEDLIST
 
 PROBLEMS:-1.we can traverse only in forward direction
 }}
+
+
+
+Questions
+{
+1.find the middle element of linked list
+2.find and delete the k-th element the last
+3.reverse the LinkedList
+4.reverse the list for k elements(Swap in pairs)
+5.detetct and remove the cycle in linked list
+}
