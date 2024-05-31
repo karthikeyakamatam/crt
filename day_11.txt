@@ -1,0 +1,72 @@
+TREE DATASTRUCTURE
+{{
+* it is an non- linear data structure in which data is stored in hierarchal order.
+  In a tree the first element is always known as "ROOT", and all other elements are defined as branches from the root.
+  *For every tree there will be only one "ROOT" node which is the starting point of a tree 
+  *every element in tree is called as a node and the number of fields in every node depends on the type of the tree.
+}}
+
+TREE TERMINOLOGY
+{
+1.ROOT NODE: start point of tree
+2.PARENT NODE: node which has successor
+3.SIBLING NODE: two or more nodes said two be siblings if it has same parent
+4.LEAF NODE: node which do not have any successor
+5.INTERNAL NODE: A node which has at least one child
+6.ANCESTOR NODE: The node which is parent and all its predecessor are ancestor nodes.
+
+}
+
+***(height is always calculated from bottom to top 
+    and level or depth is calculated from the top)
+
+{
+DEGREE : number of children a node have
+HEIGHT :
+LEVEL or DEPTH : 
+
+}
+
+
+TYPES OF TREES:
+{
+classified based on number of children it have and arrangement of the nodes 
+
+1.BINARY TREE : the tree should have at most two children
+               * it is constructed from top to bottom from left to right
+
+}
+
+
+
+*** in an inorder traversal for binary search tree it will be in ascending order
+
+
+
+TRAVERSALS IN TREES
+{
+1.INORDER:  LEFT->ROOT->RIGHT
+
+2.PREORDER:  ROOT-> LEFT->RIGHT
+
+3.POSTORDER: LEFT->RIGHT->ROOT
+
+4.LEVELORDER: visiting row by row
+
+5.VERTICALORDER: visiting column by column
+}
+
+* tree does not have cycles.
+* in tree we have traversal technique but in graph we do not have a particular traversal.
+
+* a graph may be multiple component but a tree is always a single group of elements.
+
+
+basic examples where tress are used
+(
+1.arrangment of files in computer
+)
+
+
+* a network is store in graph data structure.
+** graph does not have a starting point.
