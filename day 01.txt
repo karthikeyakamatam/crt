@@ -81,6 +81,9 @@ DATATYPE:
   *both instance and local variable can be made final
 **instance and static does not bind with the object
 
+* if a method is final then it will happen override
+* if a class is final then it cannot be a parent class
+
 
 
 afternoon:
