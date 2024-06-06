@@ -1,0 +1,132 @@
+*JAVA provides a class called COMPARABLE to compare objects in java.
+* if we have a problem which contains optimal substructure and it has overlapping concept
+   in those cases we use the dynamic programming concept to avoid overlapping concept.
+
+
+*memorizing the calculated values for future use is dynamic programming.
+
+* a data is simply an unorganized content
+  whereas the database is organized content
+
+DBMS
+{{
+
+
+}}
+
+SQL
+{{
+
+various types of languages in SQL:
+1.Data definition language
+  * completely work with skeleton of the database
+   command: 1.create
+            2.alter
+            3.drop
+              
+
+2.Data manipulation language
+  *
+
+
+3.Data control language
+  *to control the access of data
+
+4.Data Query language
+
+
+5.Transcation control language
+
+}}
+
+
+
+
+06-06-24
+
+MySQL
+{{
+BASIC COMMANDS
+(
+   * SHOW databases; :- is used to show the databases in the system
+
+   * SELECT database(); :- display the current database under usage(here we used database as the method)
+
+   *USE databasename;:-it change to the required database using the database name(use any name in place of databasename)
+
+   * select database() as current_bd; :-by using this command the column name is displayed as current_bd (use any name in place of current_bd)
+
+   *drop database databasename; :- to delete a database
+   
+   *Create database databasename; :-to create new database
+
+   *show tables; :- it shows the list of tables in database
+
+   *create table tablename(colname datatype , colname2 datatype, colname3 datatype) :- a table will be created by the table name with the mentioned parameters
+     example :- create table student(roll_num int ,stud_name varchar(30), stud_dept varchar(6), student_sem int ,stdu_ranl int);
+
+   *show columns from tablename; :- it shows the skeleton (structure of the tale) for that table along with the properites of each column
+
+   *drop table tablename; :- to delete a table from database
+
+   *alter table oldtablename RENAME to newdtablename; :- to rename a table in a database
+
+   *alter table TableName rename column OldColumnName to NewColumnName; :- to rename a column in the table
+
+   *alter table TableName drop column ColumnName; :- to drop a column from the table
+
+   *alter table TableName modify Column ColumnName datatype; :- to change the datatype of the column in a table
+
+   *alter table TableName add column ColumnName datatype; :- to add a new column to the table in a database
+
+)
+
+CONSTRAINT :- a constraint is set of rules the data should follow
+(
+1.NOT NULL:- to make the constraint not to allow NULL values for that column(this column never be empty but allows duplicate values)
+  example:1. alter table tablename MODIFY column ColumnName datatype NOT NULL:
+          2. alter table tablename MODIFY column ColumnName con_1 datatype NOT NULL:(here we are using a reference name for condition so in the future by using that we can change in the future)
+
+2.Add Unique:-it specifies that the column should be unique (null can be also taken but it is allowed only for only one row in a column)
+ example:1. alter table tablename ADD UNIQUE(columnName)
+         2. alter table tablename ADD CONSTRAINT c1 UNIQUE(columnName)
+           (**in the future if we want to remove constraint use - alter table tablename DROP INDEX c1;) 
+
+3.Primary Key:- (it is basically a combination of unique and not null)
+ example:1.alter table tablename ADD PRIMARY KEY(columnName)
+         2.alter table tablename ADD CONSTARINT constraintName PRIMARY KEY(columnName)
+ *in a table only 1 primary key is allowed(a primary key may be composition of more than 1 column)
+
+4.Foreign Key:- (it is primary key in the other table) or (a primary key in parent table is foreign key in child table)
+ example: 1.alter table tablename ADD FOREIGN KEY(columnNameInPresentTable) REFERNCES tableNameOfParentTable(ColumnNme);  
+
+5.Check: it checks a condition to perform data manipulation
+ example: 1.alter table TableName ADD CHECK  (ColumnName>=18);
+
+*6.DEFAULT: if do not give any value then by default it will have some value 
+ example: 1. alter table TableName ALTER ColName SET DEFAULT 'anyvalueName'; 
+)
+
+
+**CRUD OPERARIONS (CREATE, READ , UPDATE , DELETE)-- this operations are for data not for database
+    they are data operations not the database structure operations
+    here create refers to the insertion operation of data.
+
+{
+1.INSERTION:
+  two types--1.insert into TableName(col1,col3,col2,col4) values(v_col1,v_col3, v_col2,v_col4);
+             2.insert into TableName values(v1,v2,v3,v4);
+  
+2.READ(SELECT):
+  example: 1. select * from tableName;
+           2.select column1,column3 from tableName;
+           3.select column1 as aa, column3 as hg from tableName;
+           4.select 
+
+3.UPDATE:
+ example: 1.update tableName SET colName='value1' where col2='somevalue';
+}
+
+
+
+}}
